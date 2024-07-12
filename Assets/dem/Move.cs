@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    Rigidbody2D rb;
+    Rigidbody2D _rb;
+    [SerializeField]float _moveSpeed=3f;
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        _rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-          // rigidbody‚ğæ“¾
-        Vector2 force = new Vector3(-2.0f, 0.0f);    // —Í‚ğİ’è
-        rb.AddForce(force);  // —Í‚ğ‰Á‚¦‚é
+        float h = Input.GetAxis("Horizontal");
+        Vector2 velocity = _rb.velocity;   // ‚±‚Ì•Ï” velocity ‚É‘¬“x‚ğŒvZ‚µ‚ÄAÅŒã‚É Rigidbody2D.velocity ‚É–ß‚·
+
+        if (h != 0)
+        {
+            velocity.x = h * _moveSpeed;
+        }
+        _rb.velocity = velocity;
     }
 }
