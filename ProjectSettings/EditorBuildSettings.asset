@@ -8,13 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/dem/demstart.unity
     guid: 504f4626ecf5c7a408ad43a0aeafcd86
-  - enabled: 1
+  - enabled: 0
     path: Assets/dem/demo.unity
     guid: 00339b8ccbb78364e9b741c8ce56a0a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/dem/demend.unity
     guid: 5c980b629fd320c47b1b5a4b144d4423
+  - enabled: 1
+    path: Assets/Scenes/start.unity
+    guid: 86f89b5fc368fe840a8fe78b8d2f3334
+  - enabled: 1
+    path: Assets/Scenes/main.unity
+    guid: c3a29c3674e35be43af6fce97b94519f
+  - enabled: 1
+    path: Assets/Scenes/end.unity
+    guid: 262340274d39ba94c8bdab48d7887c0d
   m_configObjects: {}
